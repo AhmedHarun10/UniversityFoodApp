@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="9dp"
+        app:srcCompat="@drawable/welcomesign4" />
+
+    <TextView
+        android:id="@+id/textViewWelcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHomeScreen"
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="1dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageViewLogoHomeScreen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderProcessedActivity"
+    android:background="@color/lessoffwhite">
+
+    <ImageView
+        android:id="@+id/imageViewOrderProcessingImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewOrderProcessingRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewOrderProcessingImage"
+        android:text="Order"
+        android:textColor="@color/grey"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_sans_normal"/>
+
+    <TextView
+        android:id="@+id/textViewOrderProcessingTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOrderProcessingRestaurant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/grey"
+        android:textSize="22sp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="Price"/>
+
+    <TextView
+        android:id="@+id/textViewDeliveryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOrderProcessingTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Your order will be ready in 20-30 minutes."
+        android:textSize="20sp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:textColor="@color/grey"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOrderProcessed"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewDeliveryTime"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back To Home"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

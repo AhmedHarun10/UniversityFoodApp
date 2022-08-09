@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restaurant_Registration_Zaky"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/restaurantRegistrationPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Restaurant Registration"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <EditText
+        android:id="@+id/restaurantNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantRegistrationPageTitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:hint="Restaurant Name"
+        android:padding="5dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/restaurantAddressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/restaurantNameInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:padding="5dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/restaurantStateInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantAddressInput"
+        android:layout_alignParentLeft="true"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="State"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white" />
+
+    <EditText
+        android:id="@+id/restaurantZipcodeInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantAddressInput"
+        android:layout_alignParentRight="true"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="Zip Code"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white" />
+
+    <EditText
+        android:id="@+id/restaurantPhoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantZipcodeInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Phone Number"
+        android:textColorHint="@color/white"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/restaurantGenreInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantPhoneInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:hint="Food Genre"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurantGenreInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/orange"
+        android:text="Submit"
+        android:textColor="@color/white" />
+</RelativeLayout>

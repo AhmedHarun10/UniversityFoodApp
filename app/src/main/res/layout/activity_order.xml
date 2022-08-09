@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order"
+    android:id="@+id/mainOrderPage"
+    android:background="@color/lessoffwhite">
+
+
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="11dp"-->
+<!--        android:layout_marginBottom="11dp"-->
+<!--        android:backgroundTint="@color/orange"-->
+<!--        android:text="Complete order" />-->
+
+
+    <ImageView
+        android:id="@+id/rPicture"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginStart="0dp"
+        android:scaleType="centerCrop" />
+
+    <ListView
+        android:id="@+id/menu_items"
+        android:layout_width="match_parent"
+        android:layout_height="861dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-275dp"
+        android:background="@drawable/rounded_layout" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/roundedbuttonshoppingcart"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/trolley" />
+
+</RelativeLayout>

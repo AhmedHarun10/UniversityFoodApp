@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CreditCardPayment">
+
+
+    <EditText
+        android:id="@+id/editTextCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewPayments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_edit_text"
+        android:ems="12"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:hint="Enter credit card number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/orange"
+        android:textCursorDrawable="@color/orange"
+        android:theme="@style/text_input_layout" />
+
+    <EditText
+        android:id="@+id/editTextCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCreditCard"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_edit_text"
+        android:ems="4"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:hint="CVV"
+        android:inputType="number"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/orange"
+        android:textCursorDrawable="@color/orange"
+        android:theme="@style/text_input_layout" />
+
+    <EditText
+        android:id="@+id/editTextExpDateMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCreditCard"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@+id/editTextExpDateYear"
+        android:background="@drawable/custom_edit_text"
+        android:ems="3"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:hint="MM"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/orange"
+        android:textCursorDrawable="@color/orange"
+        android:theme="@style/text_input_layout" />
+
+    <EditText
+        android:id="@+id/editTextExpDateYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCreditCard"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/custom_edit_text"
+        android:ems="3"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:hint="YY"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/orange"
+        android:textCursorDrawable="@color/orange"
+        android:theme="@style/text_input_layout" />
+
+    <ImageView
+        android:id="@+id/imageViewPayments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/payments2" />
+
+    <TextView
+        android:id="@+id/textViewDateSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="/"
+        android:layout_toLeftOf="@+id/editTextExpDateYear"
+        android:layout_below="@+id/editTextCreditCard"
+        android:textSize="30sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubmitCreditCard"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/editTextCVV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/rounded_button"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewPayments"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="Card Number:"
+        android:textColor="@color/grey"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCreditCard"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="CVV:"
+        android:textSize="20sp"
+        android:textColor="@color/grey"/>
+
+    <TextView
+        android:id="@+id/textViewExpDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCreditCard"
+        android:layout_toRightOf="@id/textViewCVV"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="Exp:"
+        android:textSize="20sp"
+        android:textColor="@color/grey"/>
+
+
+</RelativeLayout>

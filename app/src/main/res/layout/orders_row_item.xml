@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/textViewOrdersNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="orderNumber"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewOrdersRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOrdersNumber"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="restaurant"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewOrdersDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:text="date"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:maxWidth="140dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/textViewOrdersTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="total"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

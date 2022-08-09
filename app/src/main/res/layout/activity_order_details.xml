@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailsActivity"
+    android:background="@color/lessoffwhite">
+
+    <TextView
+        android:id="@+id/textViewOrderDetailsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="ordernum"
+        android:textColor="@color/grey"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewOrderDetailsRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textViewOrderDetailsNumber"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="restaurant name"
+        android:textColor="@color/grey"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewOrderDetailsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOrderDetailsRestaurant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="date"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewOrderDetailsExpected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOrderDetailsDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="expected date"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCancelOrder"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+
+        android:background="@drawable/rounded_button"
+        android:text="Cancel Order"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewOrderDetailsTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOrderDetailsExpected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="total"
+        android:textColor="@color/grey"
+        android:textSize="25sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOrderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:layout_above="@id/buttonCancelOrder"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/leaveReview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="71dp"
+        android:progressTint="#FFD700"
+        android:rating="2.5" />
+
+    <Button
+        android:id="@+id/leaveReview"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOrderDetailsTotal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="118dp"
+        android:text="Leave a review" />
+
+
+</RelativeLayout>

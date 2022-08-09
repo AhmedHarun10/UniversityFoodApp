@@ -1,0 +1,72 @@
+<resources>
+
+
+    <string-array name="restaurantNamesList"></string-array>
+    <string name="app_name">University Food System</string>
+    <string name="search_text">Search</string>
+    <string name="chat_text">Chat</string>
+    <string name="orders_text">Orders</string>
+    <string name="favs_text">Favs</string>
+    <string name="home_text">Home</string>
+
+    <string name="register">Register</string>
+    <string name="registeration_prompt">Please enter your detail to register</string>
+    <string name="full_name_label">Full name</string>
+    <string name="username_label">Username</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="prev_button_label">Prev</string>
+    <string name="next_button_label">Next</string>
+    <string name="username_description">Choose a username</string>
+    <string name="logo_description">Application logo</string>
+    <string name="login_header">Login</string>
+    <string name="create_account_button">Create account</string>
+    <string name="bar">|</string>
+    <string name="forgot_password_label">Forgot Password</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_passowrd_header">Forgot Password</string>
+    <string name="forgot_password_instruction">Complete the following to recover\n account</string>
+    <string name="security_question_label">Security question</string>
+    <string name="security_answer_label">Security answer</string>
+    <string name="security_question_header">Security Questions</string>
+    <string name="security_question_description">Please choose security questions\nto recover account</string>
+    <string name="security_question_1">Security question 1</string>
+    <string name="security_answer_1">Security answer 1</string>
+    <string name="security_question_2">Security question 2</string>
+    <string name="security_answer_2">Security answer 2</string>
+    <string name="done_button">Done</string>
+    <string name="new_password">New Password</string>
+    <string-array name="security_question_list1">
+        <item>When is your anniversary?</item>
+        <item>What is your favorite color?</item>
+        <item>What is your favorite city?</item>
+        <item>In what city were you born?</item>
+        <item>What high school did you attend?</item>
+    </string-array>
+    <string-array name="security_question_list2">
+        <item>What is your favorite movie?</item>
+        <item>What is your favorite sport?</item>
+        <item>What is your favorite brand?</item>
+        <item>Which is your favorite browser?</item>
+        <item>what is your favorite forum</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="school_id_label">UTA id</string>
+    <string name="forgot_password_instruction_2">Choose a security question and provide an answer </string>
+    <string name="search_hint">Location (Address, Zip Code)</string>
+    <string name="forgot_password_header">header</string>
+    <string name="title_activity_restaurant_main_page">main page</string>
+    <string name="take_pic">Take Picture</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="save">Save</string>
+    <string name="title_activity_menu_addition">menuAdditionActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

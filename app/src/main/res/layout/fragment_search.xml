@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchFragment">
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextSearchFragment"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_edit_text"
+        android:ems="12"
+        android:hint="Enter a search term"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textColorHighlight="@color/orange"
+        android:textCursorDrawable="@color/orange"
+        android:theme="@style/text_input_layout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/locationSearchFragmentButton"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rounded_button"
+        android:text="Want something close?"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/restaurantSearchFragmentButton"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/rounded_button"
+        android:text="Want a specific restaurant?"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/foodTypeSearchFragmentButton"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="270dp"
+        android:text="What are you feeling?"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"/>
+
+    <Spinner
+        android:id="@+id/spinnerSearchFragment"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/editTextSearchFragment"
+        android:background="@drawable/rounded_button"
+        android:popupBackground="@color/orange" />
+
+</RelativeLayout>

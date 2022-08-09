@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/delivery_container"
+    tools:context=".DeliveryActivity"
+    android:background="@color/lessoffwhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/delivery_page_title"
+            android:text="Choose Delivery Method"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            style="@style/login_text_style"
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"/>
+        <ImageView
+            android:id="@+id/delivery_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/food_delivery"/>
+        <TextView
+            android:text="Choose a delivery option"
+            android:layout_gravity="center_horizontal"
+            style="@style/login_text_style"
+            android:textSize="25dp"
+            android:id="@+id/choose_delivery"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pickup_option"
+            android:layout_marginTop="60dp"
+            android:text="Pick up"
+            style="@style/login_text_style"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delivery_option"
+            android:layout_marginTop="60dp"
+            android:text="Delivery"
+            style="@style/login_text_style"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

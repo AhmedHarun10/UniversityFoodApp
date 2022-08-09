@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomNavViewProfile"
+        android:title="View profile" />
+    <item
+        android:id="@+id/bottomNavFavoriteList"
+        android:title="View Favorites list" />
+    <item
+        android:id="@+id/bottomNavCurrentRestaurants"
+        android:title="View restaurants" />
+    <item
+        android:id="@+id/bottomNavAddNewRestaurant"
+        android:title="Become a vendor" />
+
+</menu>

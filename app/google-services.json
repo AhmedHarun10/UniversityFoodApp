@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "774393424889",
+    "project_id": "university-food-system",
+    "storage_bucket": "university-food-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774393424889:android:2ba5761b2375563f12ab28",
+        "android_client_info": {
+          "package_name": "com.example.universityfoodsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774393424889-aceqfbeo0fu85ekbb0p3q604bnc22fjh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpiWW7FKQszZu3acgL9fPz7hkDngTgu98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774393424889-aceqfbeo0fu85ekbb0p3q604bnc22fjh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

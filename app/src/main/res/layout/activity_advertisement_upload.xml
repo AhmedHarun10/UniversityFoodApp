@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvertisementUpload"
+    android:background="@color/lessoffwhite">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chooseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewImageAdDimensions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_button"
+        android:text="Choose File"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="Upload"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/previewTextView"
+         />
+
+    <TextView
+        android:id="@+id/textViewImageBannerAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Choose an image to be a banner advertisement."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewImageAdDimensions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Image should be exactly 600x125."
+        android:layout_below="@+id/textViewImageBannerAd"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/previewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/grey"
+        android:layout_below="@+id/uploadButton"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/offerwhite"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/restaurant_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/courier"
+                />
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:text="Chick - fil - a"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

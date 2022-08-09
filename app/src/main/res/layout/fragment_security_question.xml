@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecurityQuestionFragment"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/page_header"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/security_question_header"
+        style="@style/login_text_style"
+        android:textSize="40sp"
+        android:layout_marginTop="120dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/page_detail"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/security_question_description"
+        style="@style/login_text_style"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/security_question_1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/security_question_1"
+        style="@style/login_text_style"/>
+
+    <Spinner
+        android:id="@+id/security_question_1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edit_text"
+        android:popupBackground="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/security_answer_1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/security_answer_1"
+        style="@style/login_text_style"/>
+
+    <EditText
+        android:id="@+id/security_answer_1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edit_text"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textCursorDrawable="@color/orange"
+        android:textColorHighlight="@color/orange"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+    <TextView
+        android:id="@+id/security_question_2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/security_question_2"
+        style="@style/login_text_style"/>
+
+    <Spinner
+        android:id="@+id/security_question_2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edit_text"
+        android:popupBackground="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <TextView
+        android:id="@+id/security_answer_2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/security_answer_2"
+        style="@style/login_text_style" />
+
+    <EditText
+        android:id="@+id/security_answer_2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edit_text"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textCursorDrawable="@color/orange"
+        android:textColorHighlight="@color/orange"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prev_button_s"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/prev_button_label"
+            android:textColor="@color/grey"
+            android:textSize="20sp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/done_button_s"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/done_button"
+            android:textColor="@color/grey"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

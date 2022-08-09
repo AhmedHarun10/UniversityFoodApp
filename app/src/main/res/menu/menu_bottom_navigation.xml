@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/bottomNavHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_text" />
+    <item
+        android:id="@+id/bottomNavSearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search_text" />
+    <item
+        android:id="@+id/bottomNavChat"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/bottomNavOrders"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/orders_text" />
+    <item
+        android:id="@+id/bottomNavUser"
+        android:icon="@drawable/user_icon"
+        app:showAsAction="collapseActionView"
+        android:title="User" />
+
+</menu>

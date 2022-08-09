@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentsActivity"
+    android:background="@color/lessoffwhite">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerViewPayments"
+        android:name="com.example.universityfoodsystem.fragments.ChoosePaymentMethod"
+        android:layout_width="420dp"
+        android:layout_height="600dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/textViewPaymentFees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="TextView"
+        android:textColor="@color/grey"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewPaymentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewPaymentFees"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/nunito_sans_normal"
+        android:text="TextView"
+        android:textColor="@color/grey"
+        android:textSize="25sp" />
+</RelativeLayout>

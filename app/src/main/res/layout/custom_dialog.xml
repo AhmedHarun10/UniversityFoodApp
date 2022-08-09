@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChatActivity"
+    android:orientation="vertical"
+    android:minHeight="400dp"
+    android:minWidth="400dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/recipient"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter eamil of recipients"
+            />
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/recipient"
+            android:hint="Subject"
+            />
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/title"
+            android:gravity="top"
+            android:hint="Enter text"
+            />
+        <Button
+            android:id="@+id/cancel_email"
+            android:layout_below="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="@color/orange"
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/send_email"
+            android:layout_below="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:backgroundTint="@color/orange"
+            android:text="Send"/>
+    </RelativeLayout>
+
+</LinearLayout>

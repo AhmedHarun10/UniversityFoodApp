@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ChoosePaymentMethod"
+    >
+
+    <TextView
+        android:id="@+id/textViewChoosePayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choose A Payment Option"
+        android:textColor="@color/grey"
+        android:layout_marginTop="150dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_sans_normal"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMealPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Plan"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/textViewChoosePayment"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit Card"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/buttonMealPlan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
